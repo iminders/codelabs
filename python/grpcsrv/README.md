@@ -1,13 +1,12 @@
-# pylab
+# grpcsrv
 
-pylab is an example for python project using [bazel build](https://bazel.build/)
+An example for python using grpc service
 
 ## Getting Started
 
 ### Install
 
 ```
-pip install -r requirements.txt
 pip install -e .
 ```
 
@@ -32,5 +31,5 @@ TODO
 TODO
 ```
 
-## Contributing
+## Contributing guide
 Please send pull request

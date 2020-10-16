@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-from pylab.common.logger import logger
+from grpcsrv.common.logger import logger
 
 
 def say(utterance):

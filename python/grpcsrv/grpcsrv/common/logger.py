@@ -1,4 +1,5 @@
 import logging
+import os
 
 logging.basicConfig(
     level=logging.INFO,
@@ -6,7 +7,11 @@ logging.basicConfig(
 
 logger = logging.getLogger()
 
-handler = logging.FileHandler("/tmp/pylab.log")
+logger_dir = os.path.join("/tmp", "codelab")
+if not os.path.exists(logger_dir):
+    os.makedirs(logger_dir)
+
+handler = logging.FileHandler(os.path.join(logger_dir, "grpcsrv.log"))
 handler.setLevel(logging.INFO)
 formatter = logging.Formatter(
     '%(asctime)s %(filename)s[%(lineno)d] %(levelname)s %(message)s')

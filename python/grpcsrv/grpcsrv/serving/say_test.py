@@ -3,10 +3,10 @@
 import logging
 import unittest
 
-from pylab.helloworld import say
+from grpcsrv.serving.say import say
 
 
-class TestMarket(unittest.TestCase):
+class TestSay(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.msg = "Hi"
