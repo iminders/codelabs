@@ -13,17 +13,18 @@ def read(fname):
 
 def read_install_requires():
     reqs = [
-            'numpy>=1.16.6'
+            'numpy>=1.16.6',
+            'tensorflow>=2.1.0',
             ]
     return reqs
 
 
-setup(name='grpcsrv',
+setup(name='tensorflowsrv',
       version=read('VERSION.txt'),
-      description='grpc pytorch infer service example',
+      description='tensorflow inference service example',
       long_description_content_type='text/markdown',
       long_description=read('README.md'),
-      url='https://github.com/iminders/codelabs/tree/master/python/torchsrv',
+      url='https://github.com/iminders/codelabs/tree/master/python/tensorflowsrv',
       author='iminders',
       author_email='liuwen.w@qq.com',
       packages=find_packages(),
