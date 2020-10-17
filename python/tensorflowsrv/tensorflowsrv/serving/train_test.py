@@ -3,14 +3,16 @@
 import logging
 import unittest
 
+from tensorflowsrv.serving.train import MODEL_DIR
 
-class TestNone(unittest.TestCase):
+
+class TestTrain(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.msg = "Hi"
 
     def test_nothing(self):
-        self.assertEqual(1, 1)
+        self.assertEqual(MODEL_DIR, "testdata/faishon")
 
 
 if __name__ == '__main__':

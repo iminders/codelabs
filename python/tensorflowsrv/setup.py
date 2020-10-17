@@ -13,8 +13,7 @@ def read(fname):
 
 def read_install_requires():
     reqs = [
-            'numpy>=1.16.6',
-            'tensorflow>=2.1.0',
+            'numpy>=1.16.6'
             ]
     return reqs
 

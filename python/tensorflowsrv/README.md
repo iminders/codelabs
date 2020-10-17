@@ -1,6 +1,6 @@
 # grpcsrv
 
-An example for python using grpc service
+An example for tensorflow service using grpc
 
 ## Getting Started
 

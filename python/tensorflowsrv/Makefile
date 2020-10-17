@@ -10,7 +10,7 @@ install3:
 ltest:
 	python3 -m pytest -s
 
-serving:
+deploy:
 	docker run -t --rm -p 8501:8501 -p 8500:8500 \
     -v "$(PWD)/tensorflowsrv/serving/testdata/fashion:/models/fashion" \
     -e MODEL_NAME=fashion \

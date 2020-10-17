@@ -4,6 +4,6 @@ services:
     test:
         image: cqfunds/ml:latest
         command:
-            bash /root/grpcsrv/docker-compose.sh
+            bash /root/tensorflowsrv/docker-compose.sh
         volumes:
-            - .:/root/grpcsrv
+            - .:/root/tensorflowsrv
