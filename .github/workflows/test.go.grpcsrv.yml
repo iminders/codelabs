@@ -1,4 +1,4 @@
-name: Test
+name: go.grpc
 
 on: push
 
@@ -8,7 +8,7 @@ jobs:
 
         steps:
             - uses: actions/checkout@v2
-            - name: Run test in docker container
+            - name: Run go grpcsrv test
               run: docker-compose -f go/grpcsrv/docker-compose.yml up --exit-code-from test test
               env:
                   RSA_PRIVATE_KEY: ${{secrets.RSA_PRIVATE_KEY}}
