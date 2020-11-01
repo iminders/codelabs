@@ -6,4 +6,4 @@ echo "test run id: $TEST_RUNID"
 
 cd /root/grpcsrv
 
-go test
+go test ./...
