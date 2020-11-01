@@ -1,0 +1,9 @@
+version: '3.0'
+
+services:
+    test:
+        image: cqfunds/ml:latest
+        command:
+            bash /root/grpcsrv/docker-compose.sh
+        volumes:
+            - .:/root/grpcsrv
