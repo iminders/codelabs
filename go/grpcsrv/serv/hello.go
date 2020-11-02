@@ -1,6 +1,5 @@
 package serv
 
-
 func Hello() string {
-    return "hello"
+	return "hello"
 }

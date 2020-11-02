@@ -1,8 +1,7 @@
 package serv
 
-
 type Servlet struct {
-    Conf Conf
+	Conf Conf
 }
 
 func New(conf Conf) (s *Servlet, err error) {
@@ -10,13 +9,13 @@ func New(conf Conf) (s *Servlet, err error) {
 	s = &Servlet{
 		Conf: conf,
 	}
-    return
+	return
 }
 
 func (s *Servlet) Free() {
-    return
+	return
 }
 
 func (s *Servlet) StartOrDie() (err error) {
-    return
+	return
 }
