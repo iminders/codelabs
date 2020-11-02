@@ -1,14 +1,15 @@
 package serv
 
 import (
-  "testing"
-  "github.com/stretchr/testify/assert"
+	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestSomething(t *testing.T) {
 
-  actual := Hello()
+	actual := Hello()
 
-  assert.Equal(t, "hello", actual)
+	assert.Equal(t, "hello", actual)
 
 }

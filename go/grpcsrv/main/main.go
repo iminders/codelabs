@@ -1,13 +1,13 @@
 package main
 
-import(
-    "fmt"
+import (
+	"fmt"
 
-    "github.com/iminders/codelabs/go/grpcsrv/serv"
+	"github.com/iminders/codelabs/go/grpcsrv/serv"
 )
 
 func main() {
 	fmt.Println("Hello, 世界")
-    msg := serv.Hello()
-    fmt.Println(msg)
+	msg := serv.Hello()
+	fmt.Println(msg)
 }
