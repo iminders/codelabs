@@ -1,4 +1,4 @@
-name: go.grpc
+name: go grpc test
 
 on: push
 
