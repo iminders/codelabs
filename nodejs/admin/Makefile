@@ -1,16 +1,16 @@
+# install dependencies
 install:
-	npm install
+	yarn install
 
-# serve with hot reload
+# serve with hot reload at localhost:3000
 dev:
-	npm run dev
+	yarn dev
 
-# build for production with minification
+# build for production and launch server
 build:
-	npm run build
+	yarn build
+	yarn start
 
-clean:
-	npm cache clean --force
-	rm -rf node_modules
-	rm -rf package-lock.json
-	rm -rf dist
+# generate static project
+gen:
+	yarn generate
