@@ -4,7 +4,7 @@ on: push
 
 
 jobs:
-  ci:
+  test:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -21,13 +21,10 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      - name: Get yarn cache directory path 🛠
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
       - name: Install dependencies 👨🏻‍💻
         run: yarn
 
 
       - name: Run tests 🧪
-        run: cd nodejs/admin && yarn test
+        run: |
+            cd nodejs/admin && yarn test
