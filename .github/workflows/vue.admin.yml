@@ -22,7 +22,7 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Install dependencies 👨🏻‍💻
-        run: yarn
+        run: cd nodejs/admin && yarn
 
 
       - name: Run tests 🧪
