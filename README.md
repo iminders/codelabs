@@ -6,4 +6,4 @@
     - [x] grpc ![python grpc test](https://github.com/iminders/codelabs/workflows/python%20grpc%20test/badge.svg)
     - [ ] tensorflow serving
 - nodejs
-    - [ ] admin
+    - [ ] vue admin ![vue.admin.test](https://github.com/iminders/codelabs/workflows/vue.admin.test/badge.svg)
