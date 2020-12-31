@@ -9,3 +9,5 @@
 *outputs/
 .ropeproject/
 bazel-*
+node_modules
+dist

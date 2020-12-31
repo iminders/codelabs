@@ -1,0 +1,2 @@
+create:
+	vue create hello

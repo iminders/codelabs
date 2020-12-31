@@ -1,0 +1,29 @@
+syntax = "proto3";
+package echo.service.v1;
+option go_package = "iminders/gateway/gen/go/proto/echo_service";
+
+import "google/api/annotations.proto";
+
+message StringMessage {
+  string value = 1;
+}
+
+message FileBinary {
+    bytes data = 1;
+}
+
+service EchoService {
+  rpc Echo(StringMessage) returns (StringMessage) {
+    option (google.api.http) = {
+      post: "/v1/example/echo"
+      body: "*"
+    };
+  }
+
+  rpc Downfile(StringMessage) returns (stream FileBinary) {
+    option (google.api.http) = {
+      post: "/v1/example/getfile"
+      body: "*"
+    };
+  }
+}
